@@ -4,42 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERS Fit Club</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/style.css">
 
     <style>
-        /* Homepage-specific styles */
-        .hero {
-            background: linear-gradient(to bottom right, #0b0f1a, #1f2b40);
-            padding: 80px 20px;
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #0d0f12;
+            color: #dcdcdc;
+        }
+
+        header {
+            background: #0b0f1a;
+            padding: 40px 20px;
             text-align: center;
             color: white;
+            border-bottom: 2px solid #2980ff;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+
+        header .logo {
+            width: 90px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #11141a;
+            padding: 12px 0;
+            border-bottom: 1px solid #1f2b40;
+        }
+
+        nav a {
+            color: #c7c7c7;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+
+        nav a:hover,
+        nav .active {
+            color: #ffffff;
+            text-shadow: 0 0 8px #2980ff;
+        }
+
+        .hero {
+            background: linear-gradient(to bottom right, #0b0f1a, #131a26);
+            padding: 90px 20px;
+            text-align: center;
+            color: white;
+            border-bottom: 2px solid #2980ff;
         }
 
         .hero h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 18px;
-            max-width: 700px;
+            max-width: 750px;
             margin: auto;
             opacity: 0.9;
+            line-height: 1.6;
         }
 
         .cta-btn {
-            margin-top: 25px;
-            display: inline-block;
+            margin-top: 30px;
             background: #2980ff;
+            padding: 14px 30px;
             color: white;
-            padding: 12px 25px;
             text-decoration: none;
             border-radius: 6px;
             font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.2s;
+            display: inline-block;
         }
 
         .cta-btn:hover {
             background: #1663c4;
+            box-shadow: 0 0 15px #2980ff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            color: #ffffff;
+            border-left: 5px solid #2980ff;
+            padding-left: 12px;
+            margin-top: 40px;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #d0d0d0;
+            margin-top: 15px;
         }
 
         .section-grid {
@@ -50,29 +132,46 @@
         }
 
         .section-card {
-            background: white;
+            background: #1a1d23;
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-left: 5px solid #2980ff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
         }
 
         .section-card h3 {
+            font-family: 'Poppins', sans-serif;
             margin-top: 0;
+            color: #ffffff;
+        }
+
+        .section-card p {
+            color: #c7c7c7;
+            line-height: 1.6;
         }
 
         .section-card a {
-            margin-top: 10px;
+            margin-top: 12px;
             display: inline-block;
             color: #2980ff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
         }
 
-        .about-text {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-top: 20px;
+        .section-card a:hover {
+            color: #66a3ff;
+            text-shadow: 0 0 8px #2980ff;
+        }
+
+        footer {
+            background: #0b0f1a;
+            padding: 25px;
+            text-align: center;
+            color: #c7c7c7;
+            margin-top: 40px;
+            border-top: 1px solid #1f2b40;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
@@ -91,61 +190,52 @@
     <a href="book.html">Book Session</a>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
     <h1>Transform Your Lifestyle Without Losing Your Momentum</h1>
     <p>
-        Realistic fitness programs built around your work schedule, life responsibilities, and unique goals.
-        Team ERS helps you build strength, confidence, and habits that last.
+        ERS Fit Club creates results-driven programs built around your work schedule, lifestyle, and goals.
+        Stay consistent. Build strength. Level up your life.
     </p>
     <a href="book.html" class="cta-btn">Start Your Transformation</a>
 </section>
 
 <div class="container">
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
     <h2>About ERS Fit Club</h2>
 
     <p class="about-text">
         ERS Fit Club is committed to transforming your lifestyle and elevating your overall well-being, 
-        no matter how busy your schedule may be. We understand that work, family, and daily responsibilities 
-        can make fitness feel impossible. That’s why our approach is designed to fit seamlessly into your life.
+        no matter how busy your schedule may be. Our approach fits seamlessly into your life.
     </p>
 
     <p class="about-text">
-        Whether you're balancing long shifts, managing stress, or starting from zero, we build realistic 
-        and sustainable programs tailored to your goals. Together, we create habits that last, improve your 
-        strength and confidence, and help you become the best version of yourself without sacrificing your 
-        work, your time, or your momentum.
+        Whether you're balancing long shifts, managing stress, or starting from zero, 
+        we design sustainable programs that help you build strength, confidence, 
+        and real long-term habits without sacrificing your work or family time.
     </p>
 
-    <!-- PREVIEW SECTIONS -->
+    <!-- GRID SECTIONS -->
     <h2>Explore ERS Fit Club</h2>
 
     <div class="section-grid">
 
         <div class="section-card">
             <h3>Programs Offered</h3>
-            <p>
-                Fat loss, muscle building, hybrid coaching, and fully customized lifestyle-based programs 
-                designed to keep you consistent and progressing.
-            </p>
+            <p>Fat loss, muscle building, hybrid training, and fully personalized coaching plans.</p>
             <a href="programs.html">View Programs →</a>
         </div>
 
         <div class="section-card">
             <h3>Workout Library</h3>
-            <p>
-                Browse home workouts, gym routines, dumbbell-only workouts, fat burner circuits, and downloadable PDFs.
-            </p>
+            <p>Home workouts, gym routines, circuits, dumbbell-only sessions, and PDF downloads.</p>
             <a href="workouts.html">Explore Workouts →</a>
         </div>
 
         <div class="section-card">
             <h3>Book a Session</h3>
-            <p>
-                Secure your slot and get personalized coaching based on your goals and availability.
-            </p>
+            <p>Secure your slot and get a custom coaching plan built around your goals.</p>
             <a href="book.html">Book Now →</a>
         </div>
 
@@ -159,4 +249,3 @@
 
 </body>
 </html>
-
