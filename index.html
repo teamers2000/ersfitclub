@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERS Fit Club</title>
+    <link rel="stylesheet" href="assets/style.css">
+
+    <style>
+        /* Homepage-specific styles */
+        .hero {
+            background: linear-gradient(to bottom right, #0b0f1a, #1f2b40);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        .cta-btn {
+            margin-top: 25px;
+            display: inline-block;
+            background: #2980ff;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+
+        .cta-btn:hover {
+            background: #1663c4;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .section-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #2980ff;
+        }
+
+        .section-card h3 {
+            margin-top: 0;
+        }
+
+        .section-card a {
+            margin-top: 10px;
+            display: inline-block;
+            color: #2980ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="assets/logo.png" class="logo" alt="ERS Logo">
+    <h1>ERS Fit Club</h1>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="workouts.html">Workouts</a>
+    <a href="programs.html">Programs</a>
+    <a href="book.html">Book Session</a>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Transform Your Lifestyle Without Losing Your Momentum</h1>
+    <p>
+        Realistic fitness programs built around your work schedule, life responsibilities, and unique goals.
+        Team ERS helps you build strength, confidence, and habits that last.
+    </p>
+    <a href="book.html" class="cta-btn">Start Your Transformation</a>
+</section>
+
+<div class="container">
+
+    <!-- ABOUT SECTION -->
+    <h2>About ERS Fit Club</h2>
+
+    <p class="about-text">
+        ERS Fit Club is committed to transforming your lifestyle and elevating your overall well-being, 
+        no matter how busy your schedule may be. We understand that work, family, and daily responsibilities 
+        can make fitness feel impossible. That’s why our approach is designed to fit seamlessly into your life.
+    </p>
+
+    <p class="about-text">
+        Whether you're balancing long shifts, managing stress, or starting from zero, we build realistic 
+        and sustainable programs tailored to your goals. Together, we create habits that last, improve your 
+        strength and confidence, and help you become the best version of yourself without sacrificing your 
+        work, your time, or your momentum.
+    </p>
+
+    <!-- PREVIEW SECTIONS -->
+    <h2>Explore ERS Fit Club</h2>
+
+    <div class="section-grid">
+
+        <div class="section-card">
+            <h3>Programs Offered</h3>
+            <p>
+                Fat loss, muscle building, hybrid coaching, and fully customized lifestyle-based programs 
+                designed to keep you consistent and progressing.
+            </p>
+            <a href="programs.html">View Programs →</a>
+        </div>
+
+        <div class="section-card">
+            <h3>Workout Library</h3>
+            <p>
+                Browse home workouts, gym routines, dumbbell-only workouts, fat burner circuits, and downloadable PDFs.
+            </p>
+            <a href="workouts.html">Explore Workouts →</a>
+        </div>
+
+        <div class="section-card">
+            <h3>Book a Session</h3>
+            <p>
+                Secure your slot and get personalized coaching based on your goals and availability.
+            </p>
+            <a href="book.html">Book Now →</a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    ERS Fit Club | Powered by Team ERS
+</footer>
+
+</body>
+</html>
 
